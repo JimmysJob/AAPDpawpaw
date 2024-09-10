@@ -651,7 +651,7 @@ $aspect-ratios: (
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
   'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Bold', 'Regular' !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 // stylelint-enable value-keyword-case
@@ -679,12 +679,19 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+// $h1-font-size: $font-size-base * 2.5 !default;
+// $h2-font-size: $font-size-base * 2 !default;
+// $h3-font-size: $font-size-base * 1.75 !default;
+// $h4-font-size: $font-size-base * 1.5 !default;
+// $h5-font-size: $font-size-base * 1.25 !default;
+// $h6-font-size: $font-size-base !default;
+
+$h1-font-size: $font-size-base * 2 !default;
+$h2-font-size: $font-size-base * 1.5 !default;
+$h3-font-size: $font-size-base * 1.25 !default;
+$h4-font-size: $font-size-base * 1.125 !default;
+$h5-font-size: $font-size-base !default;
+// $h6-font-size: $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -693,8 +700,11 @@ $font-sizes: (
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
+  5: 1rem,
+  6: 0.875rem,
+  7: 0.75rem,
+  8: 0.625rem,
+  // 6: $h6-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -709,12 +719,20 @@ $headings-color: inherit !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: (
+  // 1: 5rem,
+  // 2: 4.5rem,
+  // 3: 4rem,
+  // 4: 3.5rem,
+  // 5: 3rem,
+  // 6: 2.5rem,
   1: 5rem,
   2: 4.5rem,
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem,
+  6: 0.875rem,
+  7: 0.75rem,
+  8: 0.625rem,
 ) !default;
 
 $display-font-family: null !default;
