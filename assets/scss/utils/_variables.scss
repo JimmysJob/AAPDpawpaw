@@ -459,12 +459,21 @@ $gradient: linear-gradient(
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * 0.25,
+  // 2: $spacer * 0.5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * 0.75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -649,9 +658,15 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+
+// $font-family-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+//   'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+//   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Bold', 'Regular' !default;
+
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
   'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Bold', 'Regular' !default;
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+  'Bold', 'Regular' !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 // stylelint-enable value-keyword-case
@@ -732,7 +747,7 @@ $display-font-sizes: (
   5: 3rem,
   6: 0.875rem,
   7: 0.75rem,
-  8: 0.625rem,
+  8: 0.625rem
 ) !default;
 
 $display-font-family: null !default;
