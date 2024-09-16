@@ -9,9 +9,99 @@
 </head>
 
 <body>
-
+  <div class="container-sm header-bg" style="background-image: url(/assets/images/icon/headerBG.png);">
+    <header class="py-1 text-center">
+      <p class="fs-7 text-neutral-400">2024/07/19, 星期五</p>
+      <h2 class="mb-5 fs-5 fw-bold text-neutral-900">天氣正好，快帶小不點出門跑跑吧！</h2>
+      <a href="#"
+        class="d-inline-flex px-3 py-2 gap-2 align-items-center rounded-pill bg-primary-500 text-neutral-0"><img
+          src="/assets/images/icon/sun.png" alt="sun">31℃</a>
+    </header>
+  </div>
+  <section class="container-sm mt-3 mb-5">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper py-1 d-flex">
+        <div class="swiper-slide">
+          <div>
+            <a href="#"><img src="/assets/images/icon/Daily Activity Goal (1).png" alt=""></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><a href="#"><img src="/assets/images/icon/Daily Activity Goal.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-sm mt-6 mb-5">
+    <div class="px-1 py-2 border border-1 rounded-2">
+      <div>
+        <p class="text-primary ps-3 mb-2 fs-5 fw-bold">今日推薦</p>
+      </div>
+      <hr class="m-0">
+      <div class="d-flex justify-content-between px-3 pt-3 pb-1">
+        <div>
+          <p class="d-flex align-items-center fs-6 gap-1 mb-1"><img src="/assets/images/icon/location.png" alt="">
+            華山公園狗活動區</p>
+          <p class="text-tertiary fs-8 ms-5 mb-5">台北市, 距離450公尺</p>
+          <div class="d-flex">
+            <p class="fs-8 px-2 py-1 me-1 bg-neutral-75 rounded-1">#狗公園</p>
+            <p class="fs-8 px-2 py-1 bg-neutral-75 rounded-1">#草地</p>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/images/suggest_location01-sm.png" alt="" class="rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-sm">
+    <div class="px-1 py-2 border border-1 rounded-2">
+      <div class="px-3">
+        <p class="fs-5 text-secondary fw-bold mb-2">散步紀錄</p>
+      </div>
+      <hr class="m-0">
+      <div class="p-3 position-relative">
+        <img src="/assets/images/icon/user01.png" alt="" class="log-woman-position position-absolute">
+        <img src="/assets/images/icon/user03.png" alt="" class="log-pet-position position-absolute">
+        <div class="d-flex gap-1 mb-1">
+          <p class="text-tertiary fs-8">2024/07/19</p>
+          <p class="text-tertiary fs-8">06:31</p>
+        </div>
+        <p class="d-flex align-items-center gap-1 mb-1"><img src="/assets/images/icon/location.png" alt="">大安森林公園</p>
+        <div class="d-flex">
+          <div class="d-flex">
+            <p class="me-2 fw-bold fs-6">1</p>
+            <p class="me-2 fs-6">小時</p>
+            <p class="me-2 fw-bold fs-6">11</p>
+            <p class="pe-2 border-end border-2 border-neutral-100 fs-6">分鐘</p>
+          </div>
+          <div class="d-flex">
+            <p class="mx-2 fw-bold fs-6">3.2</p>
+            <p class="fs-6">公里</p>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper py-1 d-flex">
+            <div class="swiper-slide">
+              <div>
+                <a href="#"><img src="/assets/images/img01-sm.png" alt="" class="rounded-2"></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div><a href="#"><img src="/assets/images/img02-sm.png" alt="" class="rounded-2"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
 
     <script type="module" src="../main.js"></script>
 </body>
