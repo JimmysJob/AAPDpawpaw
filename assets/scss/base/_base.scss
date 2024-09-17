@@ -22,3 +22,9 @@ p {
 .shadow {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
+
+.container-mobile {
+  max-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+}
