@@ -8,13 +8,13 @@
   <title>index</title>
 </head>
 
-<body>
+<body class="position-relative">
   <div class="container-sm header-bg" style="background-image: url(/assets/images/icon/headerBG.png);">
     <header class="py-1 text-center">
       <p class="fs-7 text-neutral-400">2024/07/19, 星期五</p>
       <h2 class="mb-5 fs-5 fw-bold text-neutral-900">天氣正好，快帶小不點出門跑跑吧！</h2>
       <a href="#"
-        class="d-inline-flex px-3 py-2 gap-2 align-items-center rounded-pill bg-primary-500 text-neutral-0"><img
+        class="d-inline-flex px-3 py-2 gap-2 align-items-center rounded-pill shadow bg-primary-500 text-neutral-0"><img
           src="/assets/images/icon/sun.png" alt="sun">31℃</a>
     </header>
   </div>
@@ -54,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="container-sm">
+  <section class="container-sm walk-section">
     <div class="px-1 py-2 border border-1 rounded-2">
       <div class="px-3">
         <p class="fs-5 text-secondary fw-bold mb-2">散步紀錄</p>
@@ -95,6 +95,13 @@
       </div>
     </div>
   </section>
+
+  <div class="position-fixed start-position">
+    <a href="start.html"
+      class="d-flex align-items-center top-0 bg-primary-500 fs-4 text-neutral-0 rounded-pill shadow gap-2 px-4 py-3"><img
+        src="/assets/images/icon/dog_foot_white.png" alt="">開始運動</a>
+  </div>
+
 
   <%- include('./layout/footer'); -%>
 
