@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>散步日記</title>
+</head>
+
+<body>
+    <div class="container-mobile mb-8">
+        <div class="">
+            <div class="border-bottom border-1 border-neutral-100 mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-3 mx-4">
+                    <a href="./walkRecord.html">
+                        <img src="../assets/images/icon/back.png" alt="back">
+                    </a>
+
+                    <h3 class="fw-bold">散步日記</h3>
+
+                    <div class="dropdown">
+                        <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="" src="../assets/images/icon/more.png" alt="more">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">more 1</a></li>
+                            <li><a class="dropdown-item" href="#">more 2</a></li>
+                            <li><a class="dropdown-item" href="#">more 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column gap-5 mx-4">
+
+                <div class="border border-1 rounded-4 p-3">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="d-flex gap-1 mb-1">
+                                    <p class="fs-8">2024/07/18</p>
+                                    <p class="fs-8">20:49</p>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <img src="../assets/images/icon/location.png" alt="location"
+                                        style="width: 16px; height: 16px;">
+                                    <p class="fs-7">大安森林公園</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <img class="rounded-pill position-relative walkDy-posRel-1"
+                                    style="width: 28px; height: 28px;" src="../assets/images/user01-sm.png"
+                                    alt="user01">
+                                <img class="rounded-pill position-relative walkRd-posRel-2" style="width: 28px; height: 28px;"
+                                    src="../assets/images/pet02-sm.png" alt="pet02">
+                                <img class="rounded-pill position-relative" style="width: 28px; height: 28px;"
+                                    src="../assets/images/pet01-sm.png" alt="pet01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-3">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-rounded position-relative" src="../assets/images/img01-sm.png"
+                                        alt="img01-sm">
+                                </div>
+                                <div class="swiper-slide position-relative walkDy-posRel-2">
+                                    <img class="img-rounded" src="../assets/images/img02-sm.png" alt="img01-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-1 rounded-4 p-3">
+                    <p class="fs-7 text-neutral-600 mb-2">心情紀錄</p>
+                    <p class="fw-bold">今天散步天氣超好很開心</p>
+                    <p class="fw-bold">遇到黑皮的老朋友🤩🤩🤩🤩🤩</p>
+                </div>
+
+                <div class="border border-1 rounded-4 p-3">
+                    <div class="card-header mb-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div class="d-flex flex-column workout-status-title-width-1">
+                                    <p class="fs-7 text-neutral-400 text-center">時長</p>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fs-3 fw-bold">1</p>
+                                        <p class="fs-6 fw-bold mt-2">小時</p>
+                                        <p class="fs-3 fw-bold">11</p>
+                                        <p class="fs-6 fw-bold mt-2">分鐘</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex flex-column workout-status-title-width-1">
+                                    <p class="fs-7 text-neutral-400 text-center">距離</p>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fs-3 fw-bold">3.9</p>
+                                        <p class="fs-6 fw-bold mt-2">公里</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="fs-7 text-neutral-600 mb-2">運動軌跡</p>
+                        <img class="img-rounded" src="../assets/images/map02-sm.png" alt="map02">
+                    </div>
+                </div>
+
+                <div class="border border-1 rounded-4 pt-3 px-3">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <p class="fw-bold mb-5">黑皮</p>
+                                <div class="d-flex flex-column gap-3 mb-8">
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">熱量</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1">174</h4>
+                                            <h4 class="fw-bold">大卡</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">步數</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1">11749</h4>
+                                            <h4 class="fw-bold">步</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">體溫</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1">38.1</h4>
+                                            <h4 class="fw-bold">度</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均心律</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1">181</h4>
+                                            <h4 class="fw-bold">bpm</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均速度</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1">3.1</h4>
+                                            <h4 class="fw-bold">公里/小時</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="fw-bold mb-5">墨鏡姊</p>
+                                <div class="d-flex flex-column gap-3 mb-8">
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">熱量</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">大卡</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">步數</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">步</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">體溫</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">度</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均心律</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">bpm</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均速度</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">公里/小時</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p class="fw-bold mb-5">小不點</p>
+                                <div class="d-flex flex-column gap-3 mb-8">
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">熱量</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">大卡</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">步數</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">步</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">體溫</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">度</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均心律</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">bpm</h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="workout-status-width-1 fs-6 text-neutral-500 me-3">平均速度</p>
+                                        <div class="d-flex workout-status-width-2">
+                                            <h4 class="fw-bold me-1"> - </h4>
+                                            <h4 class="fw-bold">公里/小時</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination primary-500"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <%- include('./layout/footer'); -%> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>
