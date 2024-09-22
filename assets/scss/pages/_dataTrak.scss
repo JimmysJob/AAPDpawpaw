@@ -7,11 +7,107 @@
     top: 2.5px;
 }
 
+.dataTk-nav{
+    margin-top: -4px;
+}
+
 .page-item-w {
     width: 37px;
     height: 50px;
 }
 
-.Page {
-    margin-bottom: 12px;
+.data-card {
+    padding: 18.5px 6.5px;
 }
+
+.data-title {
+    width: 140px;
+    padding: 10px 10px 0 10px;
+}
+
+.data-width {
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+// ----------------------------------------------
+// 0% 起點
+.pie {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: $neutral-75;
+}
+
+// 使用偽元素遮住第二色
+.pie1 {
+    // background: conic-gradient(from 180deg at 50% 50%, #CAEBB7, #9DD581 199.44deg, #52AC2A);
+    background-image: linear-gradient(to right, transparent 50%, #9DD581 0);
+
+    &::before {
+        content: '';
+        display: block;
+        margin-left: 50%;
+        height: 100%;
+        border-radius: 0 100% 100% 0 / 50%;
+        background-color: inherit;
+        transform-origin: left;
+    }
+}
+
+// 當百分比大於50% 需要修改偽元素顏色
+.pie2::before {
+    background-color: #9DD581;
+    transform: rotate(97.2deg);
+}
+
+.pie3::before {
+    background-color: #9DD581;
+    transform: rotate(151.2deg);
+}
+
+// 旋轉偽元素
+.pie4::before {
+    transform: rotate(54deg);
+}
+
+// 動畫及圖片角度
+.pie1 {
+    // animation: pie2 ease-in-out 3s;
+    transform: rotate(180deg);
+}
+
+// @keyframes pie2 {
+//     0% {
+//         transform: rotate(180deg);
+//     }
+
+//     100% {
+//         transform: rotate(270deg);
+//     }
+// }
+
+.data-img {
+    transform: rotate(180deg);
+}
+
+.data-img-posRel {
+    top: 15px;
+}
+
+// 圓形遮罩
+.inside-circle {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+    background: $neutral-0;
+    border-radius: 50%;
+    top: -120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+// ----------------------------------------------
