@@ -16,9 +16,10 @@
       <div class="d-flex justify-content-between align-items-center mb-5">
         <div class="bg-neutral-0" style="width: 24px; height: 24px;"></div>
 
-        <div class="btn-group bg-neutral-50 rounded-pill p-1">
-          <a href="#" class="btn btn-neutral-0 rounded-pill py-1 fs-7 active me-1" aria-current="page">數據追蹤</a>
-          <a href="#" class="btn btn-neutral-0 rounded-pill py-1 fs-7">散步紀錄</a>
+        <div class="btn-group bg-neutral-50 rounded-pill py-1 px-2 gap-1">
+          <a href="./dataTrak.html" class="rounded-pill btn fs-7 fw-bold py-1 border-0 btn-neutral-0 active"
+            aria-current="page">數據追蹤</a>
+          <a href="./walkRecord.html" class="rounded-pill btn fs-7 fw-bold py-1 border-0 text-neutral-400">散步紀錄</a>
         </div>
 
         <div class="dropdown">
@@ -40,37 +41,51 @@
               <img src="../assets/images/icon/arrow_left.png" alt="arrow_left">
             </a>
           </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">S</p>
               <p class="fs-8 fw-bold text-neutral-200">14</p>
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">M</p>
               <p class="fs-8 fw-bold text-neutral-200">15</p>
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-500 mb-1">T</p>
-              <p class="fs-8 fw-bold text-neutral-500">16</p>
-              <!-- <div class="bg-primary-500 rounded-pill position-relative dataTk-posRel-1" style="width: 20px; height: 20px;">
-              <p class="fs-8 fw-bold text-neutral-0 position-relative dataTk-posRel-2">16</p>
-              </div> -->
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+              <div class="bg-primary-500 rounded-pill position-relative dataTk-posRel-1"
+                style="width: 20px; height: 20px;">
+                <p class="fs-8 fw-bold text-neutral-0 position-relative dataTk-posRel-2">16</p>
+              </div>
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">W</p>
               <p class="fs-8 fw-bold text-neutral-200">17</p>
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">T</p>
               <p class="fs-8 fw-bold text-neutral-200">18</p>
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">F</p>
               <p class="fs-8 fw-bold text-neutral-200">19</p>
-            </a> </li>
-          <li class="page-item page-item-w text-center"> <a class="page-link border-0" href="#">
+            </a>
+          </li>
+          <li class="page-item page-item-w text-center">
+            <a class="page-link border-0" href="#">
               <p class="fs-7 fw-bold text-neutral-200 mb-1">S</p>
               <p class="fs-8 fw-bold text-neutral-200">20</p>
-            </a> </li>
+            </a>
+          </li>
           <li class="page-item">
             <a class="page-link border-0" href="#" aria-label="Next">
               <img src="../assets/images/icon/arrow_right.png" alt="arrow_right">
@@ -79,6 +94,159 @@
         </ul>
       </nav>
 
+      <div class="d-flex flex-column gap-3 dataTk-nav">
+
+        <a href="#">
+          <div class="data-card border border-1 rounded-4">
+            <div class="d-flex gap-2">
+              <div class="d-flex flex-column data-title">
+                <div class="pie pie1 pie2">
+                  <div class="inside-circle">
+                    <img class="rounded-circle m-auto position-relative data-img-posRel data-img"
+                      src="../assets/images/user01.png" alt="user01" style="width: 68px; height: 68px;">
+                  </div>
+                </div>
+                <p class="fs-6 fw-bold text-center">墨鏡姊</p>
+                <div class="d-flex gap-1 justify-content-center">
+                  <p class="fs-6">活動量</p>
+                  <p class="fs-6 fw-bold">77%</p>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-content-center">
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">距離</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">3</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">公里</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">時間</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">1</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">小時</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">消耗</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">332</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">大卡</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">步數</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">16,800</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">步</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./dataTrakDay.html">
+          <div class="data-card border border-1 rounded-4">
+            <div class="d-flex gap-2">
+              <div class="d-flex flex-column data-title">
+                <div class="pie pie1 pie3">
+                  <div class="inside-circle">
+                    <img class="rounded-circle m-auto position-relative data-img-posRel data-img"
+                      src="../assets/images/pet01.png" alt="pet01" style="width: 68px; height: 68px;">
+                  </div>
+                </div>
+                <p class="fs-6 fw-bold text-center">黑皮</p>
+                <div class="d-flex gap-1 justify-content-center">
+                  <p class="fs-6">活動量</p>
+                  <p class="fs-6 fw-bold">92%</p>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-content-center">
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">距離</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">3</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">公里</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">時間</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">1</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">小時</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">消耗</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">332</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">大卡</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">步數</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">16,800</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">步</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="data-card border border-1 rounded-4">
+            <div class="d-flex gap-2">
+              <div class="d-flex flex-column data-title">
+                <div class="pie pie1 pie4">
+                  <div class="inside-circle">
+                    <img class="rounded-circle m-auto position-relative data-img-posRel data-img"
+                      src="../assets/images/pet02.png" alt="pet02" style="width: 68px; height: 68px;">
+                  </div>
+                </div>
+                <p class="fs-6 fw-bold text-center">小不點</p>
+                <div class="d-flex gap-1 justify-content-center">
+                  <p class="fs-6">活動量</p>
+                  <p class="fs-6 fw-bold">15%</p>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-content-center">
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">距離</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">3</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">公里</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">時間</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">1</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">小時</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">消耗</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">332</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">大卡</p>
+                  </div>
+                </div>
+                <div class="data-width">
+                  <p class="fs-8 text-neutral-400">步數</p>
+                  <div class="d-flex">
+                    <h3 class="fw-bold">16,800</h3>
+                    <p class="fs-7 fw-bold ms-1 mt-2">步</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
 
     </div>
 
