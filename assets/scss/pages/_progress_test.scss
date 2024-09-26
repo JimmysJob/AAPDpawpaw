@@ -1,0 +1,191 @@
+
+.circle-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    top: 0;
+    box-sizing: border-box;
+}
+
+// no1
+.right-box {
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.circle-line1 {
+    left: -60px;
+    border-top: 10px solid $neutral-75;
+    border-right: 10px solid $neutral-75;
+}
+
+.left-box {
+    width: 60px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.circle-line2 {
+    left: 0;
+    border-top: 10px solid $neutral-75;
+    border-left: 10px solid $neutral-75;
+}
+
+// .circle-line3 {
+//     left: -60px;
+//     border-top: 10px solid #9DD581;
+//     border-right: 10px solid #9DD581;
+//     // transform: rotate(-135deg);
+// }
+
+.circle-line4 {
+    left: 0;
+    border-top: 10px solid #9DD581;
+    border-left: 10px solid #9DD581;
+    // transform: rotate(-135deg);
+}
+
+// ------------------------------------------------------
+
+// no2
+.circle-line {
+    border-top: 10px solid $neutral-75;
+    border-right: 10px solid $neutral-75;
+    border-left: 10px solid $neutral-75;
+}
+
+.circle-line-g {
+    border-top: 10px solid #9DD581;
+    border-left: 10px solid #9DD581;
+    // border-right: 10px solid #9DD581;
+    // transform: rotate(-35deg);
+}
+
+.circle-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 45px;
+        left: 45px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $neutral-75;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(45deg) translate(0px, 55px);
+    }
+    
+    &::after {
+        transform: rotate(-45deg) translate(0px, 55px) ;
+    }
+}
+
+.circle-line-g {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 45px;
+        left: 45px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #9DD581;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(45deg) translate(0px, 55px);
+    }
+    
+    &::after {
+        transform: rotate(-135deg) translate(0px, 55px) ;
+    }
+}
+
+// ------------------------------------------------------
+
+// no3
+.back-circle {
+    position: relative;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 82.75%, $neutral-75 25%, $neutral-75);// 
+    mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
+    transform: rotate(135deg);
+}
+
+.back-circle-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    &::before {
+        background: #9DD581;
+        transform: rotate(225deg) translate(0, -55px);
+    }
+    
+    &::after {
+        background: $neutral-75;
+        transform: rotate(135deg) translate(0, -55px) ;
+    }
+}
+
+.circle-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #52AC2A;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(74deg) translate(0, -55px);
+    }
+}
