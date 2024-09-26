@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>數據追蹤</title>
-  <script type="module" crossorigin src="/AAPDpawpaw/assets/main-654ae399.js"></script>
-  <link rel="stylesheet" href="/AAPDpawpaw/assets/main-fd739c23.css">
+  <script type="module" crossorigin src="/AAPDpawpaw/assets/main-b466f343.js"></script>
+  <link rel="stylesheet" href="/AAPDpawpaw/assets/main-b2617af0.css">
 </head>
 
 <body>
@@ -66,22 +67,66 @@
 
             <div class="d-flex flex-column gap-5 dataDy-mt-1">
 
-                <div class="user-h">
-                    <div class="m-auto circle-box">
-                        <div class="back-circle-2"></div>
-                        <div class="back-circle-point"></div>
-                        <div class="circle-point-2"></div>
-                    </div>
-                    <div class="d-flex flex-column data-title position-relative user-pos-rel m-auto">
-                        <img class="rounded-circle m-auto mb-3" src="/AAPDpawpaw/assets/pet01-f9e75758.png" alt="pet01"
-                            style="width: 68px; height: 68px;">
-                        <p class="fs-6 fw-bold text-center">黑皮</p>
-                        <div class="d-flex gap-1 justify-content-center">
-                            <p class="fs-6">活動量</p>
-                            <p class="fs-6 fw-bold">92%</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper swiper-w">
+                        <div class="swiper-slide">
+                            <div class="user-h">
+                                <div class="m-auto circle-box">
+                                    <div class="back-circle-2"></div>
+                                    <div class="back-circle-point"></div>
+                                    <div class="circle-point-2"></div>
+                                </div>
+                                <div class="d-flex flex-column data-title position-relative user-pos-rel m-auto">
+                                    <img class="rounded-circle m-auto mb-3" src="/AAPDpawpaw/assets/pet01-f9e75758.png" alt="pet01"
+                                        style="width: 68px; height: 68px;">
+                                    <p class="fs-6 fw-bold text-center">黑皮</p>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fs-6">活動量</p>
+                                        <p class="fs-6 fw-bold">92%</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="swiper-slide  position-relative dataDy-posRel-1">
+                            <div class="user-h ">
+                                <div class="m-auto circle-box">
+                                    <div class="back-circle-3"></div>
+                                    <div class="back-circle-point"></div>
+                                    <div class="circle-point-3"></div>
+                                </div>
+                                <div class="d-flex flex-column data-title position-relative user-pos-rel m-auto">
+                                    <img class="rounded-circle m-auto mb-3" src="/AAPDpawpaw/assets/pet02-345e810c.png" alt="pet02"
+                                        style="width: 68px; height: 68px;">
+                                    <p class="fs-6 fw-bold text-center">小不點</p>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fs-6">活動量</p>
+                                        <p class="fs-6 fw-bold">15%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide position-relative dataDy-posRel-2">
+                            <div class="user-h">
+                                <div class="m-auto circle-box">
+                                    <div class="back-circle-1"></div>
+                                    <div class="back-circle-point"></div>
+                                    <div class="circle-point-1"></div>
+                                </div>
+                                <div class="d-flex flex-column data-title position-relative user-pos-rel m-auto">
+                                    <img class="rounded-circle m-auto mb-3" src="../assets/images/user01.png"
+                                        alt="user01" style="width: 68px; height: 68px;">
+                                    <p class="fs-6 fw-bold text-center">墨鏡姊</p>
+                                    <div class="d-flex gap-1 justify-content-center">
+                                        <p class="fs-6">活動量</p>
+                                        <p class="fs-6 fw-bold">77%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
+
+
 
                 <div class="border border-1 rounded-4">
                     <div class="p-3">
@@ -205,7 +250,21 @@
       </a>
     </li>
   </ul>
-</nav>        
+</nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 8,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+        
 </body>
 
 </html>
