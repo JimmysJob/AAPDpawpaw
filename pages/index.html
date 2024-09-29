@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>index</title>
 </head>
 
@@ -13,7 +14,7 @@
     <div class="container-sm header-bg" style="background-image: url(/assets/images/icon/headerBG.png);">
       <header class="py-1 text-center">
         <p class="fs-7 text-neutral-400">2024/07/19, 星期五</p>
-        <h2 class="mb-5 fs-5 fw-bold text-neutral-900">天氣正好，快帶小不點出門跑跑吧！</h2>
+        <h2 class="mb-5 fs-5 fw-bolder text-neutral-900">天氣正好，快帶小不點出門跑跑吧！</h2>
         <a href="#"
           class="d-inline-flex px-3 py-2 gap-2 align-items-center rounded-pill shadow bg-primary-500 text-neutral-0"><img
             src="/assets/images/icon/sun.png" alt="sun">31℃</a>
@@ -23,12 +24,13 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper py-1 d-flex">
           <div class="swiper-slide">
-            <div>
-              <a href="#"><img src="/assets/images/icon/Daily Activity Goal (1).png" alt=""></a>
-            </div>
+            <img src="/assets/images/Daily Activity Goal woman.png" alt="" width="140px" height="156px">
           </div>
-          <div class="swiper-slide">
-            <div><a href="#"><img src="/assets/images/icon/Daily Activity Goal.png" alt=""></a></div>
+          <div class="swiper-slide ms-setting">
+            <img src="/assets/images/Daily Activity Goal dog.png" alt="" width="140px" height="156px">
+          </div>
+          <div class="swiper-slide ms-setting">
+            <img src="/assets/images/Daily Activity Goal woman.png" alt="" width="140px" height="156px">
           </div>
         </div>
       </div>
@@ -81,14 +83,14 @@
               <p class="fs-6">公里</p>
             </div>
           </div>
-          <div class="swiper mySwiper">
+          <div class="swiper myImgSwiper">
             <div class="swiper-wrapper py-1 d-flex">
               <div class="swiper-slide">
                 <div>
                   <a href="#"><img src="/assets/images/img01-sm.png" alt="" class="rounded-2"></a>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide ms-img-setting">
                 <div><a href="#"><img src="/assets/images/img02-sm.png" alt="" class="rounded-2"></a></div>
               </div>
             </div>
@@ -97,7 +99,7 @@
       </div>
     </section>
 
-    <div class="position-fixed start-position">
+    <div class="position-fixed start-position z-3">
       <a href="start.html"
         class="d-flex align-items-center top-0 bg-primary-500 fs-4 text-neutral-0 rounded-pill shadow gap-2 px-4 py-3"><img
           src="/assets/images/icon/dog_foot_white.png" alt="">開始運動</a>
@@ -108,7 +110,21 @@
   <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {});
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 8,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".myImgSwiper", {
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
 
     <script type="module" src="../main.js"></script>
