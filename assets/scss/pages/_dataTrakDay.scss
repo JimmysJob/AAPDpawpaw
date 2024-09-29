@@ -6,6 +6,11 @@
     margin-top: -16px;
 }
 
+.dataDy-mx-1 {
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+}
+
 .dataDy-pt-1 {
     padding-top: 10px;
 }
@@ -43,8 +48,21 @@
     width: 48px;
 }
 
-.swiper-w {
-    width: 140px;
+.daySwiper {
+    .mySwiper {
+        overflow: visible;
+        width: 140px;
+    }
+
+    .swiper-slide {
+        opacity: 0.5;
+        transform: scale(0.75);
+    }
+
+    .swiper-slide-active {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .dataDy-posRel-1 {
@@ -60,3 +78,7 @@
 .dataDy-nav:hover {
     background-color: $neutral-100;
 }
+
+// .swiper- {
+
+// }
