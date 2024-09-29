@@ -31,83 +31,134 @@
     margin-bottom: 10px;
 }
 
-// ----------------------------------------------
-// 0% 起點
-.pie {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: $neutral-75;
+.user-h {
+    height: 156px;
 }
 
-// 使用偽元素遮住第二色
-.pie1 {
-    // background: conic-gradient(from 180deg at 50% 50%, #CAEBB7, #9DD581 199.44deg, #52AC2A);
-    background-image: linear-gradient(to right, transparent 50%, #9DD581 0);
+.user-pos-rel {
+    top: -105px;
+}
 
+// ----------------------------------------------
+.back-circle-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
     &::before {
-        content: '';
-        display: block;
-        margin-left: 50%;
-        height: 100%;
-        border-radius: 0 100% 100% 0 / 50%;
-        background-color: inherit;
-        transform-origin: left;
+        background: #9DD581;
+        transform: rotate(225deg) translate(0, -55px);
+    }
+    
+    &::after {
+        background: $neutral-75;
+        transform: rotate(135deg) translate(0, -55px) ;
     }
 }
 
-// 當百分比大於50% 需要修改偽元素顏色
-.pie2::before {
-    background-color: #9DD581;
-    transform: rotate(97.2deg);
-}
-
-.pie3::before {
-    background-color: #9DD581;
-    transform: rotate(151.2deg);
-}
-
-// 旋轉偽元素
-.pie4::before {
-    transform: rotate(54deg);
-}
-
-// 動畫及圖片角度
-.pie1 {
-    // animation: pie2 ease-in-out 3s;
-    transform: rotate(180deg);
-}
-
-// @keyframes pie2 {
-//     0% {
-//         transform: rotate(180deg);
-//     }
-
-//     100% {
-//         transform: rotate(270deg);
-//     }
-// }
-
-.data-img {
-    transform: rotate(180deg);
-}
-
-.data-img-posRel {
-    top: 15px;
-}
-
-// 圓形遮罩
-.inside-circle {
-    width: 100px;
-    height: 100px;
-    clip-path: circle(50%);
-    background: $neutral-0;
-    border-radius: 50%;
-    top: -120px;
-    margin-top: 10px;
-    margin-left: 10px;
+.back-circle-1 {
     position: relative;
-    z-index: 100;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 82.75%, $neutral-75 25%, $neutral-75);
+    mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
+    transform: rotate(135deg);
 }
 
-// ----------------------------------------------
+.circle-point-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #52AC2A;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(74deg) translate(0, -55px);
+    }
+}
+
+.back-circle-2 {
+    position: relative;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 94%, $neutral-75 25%, $neutral-75);
+    mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
+    transform: rotate(135deg);
+}
+
+.circle-point-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #52AC2A;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(114deg) translate(0, -55px);
+    }
+}
+
+.back-circle-3 {
+    position: relative;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 36.25%, $neutral-75 25%, $neutral-75);
+    mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
+    transform: rotate(135deg);
+}
+
+.circle-point-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #52AC2A;
+        z-index: 1;
+    }
+    
+    &::before {
+        transform: rotate(265deg) translate(0, -55px);
+    }
+}

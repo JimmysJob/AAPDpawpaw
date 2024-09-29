@@ -6,6 +6,10 @@
     margin-top: -16px;
 }
 
+.dataDy-pt-1 {
+    padding-top: 10px;
+}
+
 .dataDy-card-p1 {
     padding: 12.5px 8px;
 }
@@ -31,4 +35,28 @@
     background-color: #83cb4a;
     border-radius: 50px;
     width: 48px;
+}
+
+.dataDy-status-2 {
+    background-color: #df562f;
+    border-radius: 50px;
+    width: 48px;
+}
+
+.swiper-w {
+    width: 140px;
+}
+
+.dataDy-posRel-1 {
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.dataDy-posRel-2 {
+    margin-left: -50px;
+    z-index: 1;
+}
+
+.dataDy-nav:hover {
+    background-color: $neutral-100;
 }
