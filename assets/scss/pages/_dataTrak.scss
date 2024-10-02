@@ -116,7 +116,7 @@
     }
 }
 
-@-webkit-keyframes point1 {
+@keyframes point1 {
     from {
         -webkit-transform: rotate(135deg) translateX(55px);
         background-color: #9DD581;
@@ -176,7 +176,7 @@
     }
 }
 
-@-webkit-keyframes point2 {
+@keyframes point2 {
     from {
         -webkit-transform: rotate(135deg) translateX(55px);
         background-color: #9DD581;
@@ -230,7 +230,7 @@
     }
 }
 
-@-webkit-keyframes point3 {
+@keyframes point3 {
     from {
         -webkit-transform: rotate(135deg) translateX(55px);
         background-color: #9DD581;
