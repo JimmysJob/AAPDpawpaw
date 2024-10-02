@@ -7,7 +7,7 @@
     top: 2.5px;
 }
 
-.dataTk-nav{
+.dataTk-nav {
     margin-top: -4px;
 }
 
@@ -44,6 +44,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     &::before,
     &::after {
         content: "";
@@ -55,15 +56,15 @@
         border-radius: 50%;
         z-index: 1;
     }
-    
+
     &::before {
         background: #9DD581;
         transform: rotate(225deg) translate(0, -55px);
     }
-    
+
     &::after {
         background: $neutral-75;
-        transform: rotate(135deg) translate(0, -55px) ;
+        transform: rotate(135deg) translate(0, -55px);
     }
 }
 
@@ -73,15 +74,33 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 82.75%, $neutral-75 25%, $neutral-75);
+    background: conic-gradient(white 0 90deg,
+            #9DD581 90deg,
+            #52AC2A var(--angle),
+            #ededed 90deg 360deg);
     mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
     transform: rotate(135deg);
+    animation: 2s animate1 0s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    to {
+        --angle: 297.9deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 .circle-point-1 {
     position: absolute;
     top: 0;
     left: 0;
+
     &::before {
         content: "";
         position: absolute;
@@ -90,12 +109,22 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #52AC2A;
         z-index: 1;
+        transform: rotate(225deg) translate(0, -55px);
+        animation: 2s point1 0.74s ease;
+        animation-fill-mode: forwards;
     }
-    
-    &::before {
-        transform: rotate(74deg) translate(0, -55px);
+}
+
+@-webkit-keyframes point1 {
+    from {
+        -webkit-transform: rotate(135deg) translateX(55px);
+        background-color: #9DD581;
+    }
+
+    to {
+        -webkit-transform: rotate(342.9deg) translateX(55px);
+        background-color: #52AC2A;
     }
 }
 
@@ -105,15 +134,33 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 94%, $neutral-75 25%, $neutral-75);
+    background: conic-gradient(white 0 90deg,
+            #9DD581 90deg,
+            #52AC2A var(--angle2),
+            #ededed 90deg 360deg);
     mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
     transform: rotate(135deg);
+    animation: 2s animate2 0s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate2 {
+    to {
+        --angle2: 338.4deg;
+    }
+}
+
+@property --angle2 {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 .circle-point-2 {
     position: absolute;
     top: 0;
     left: 0;
+
     &::before {
         content: "";
         position: absolute;
@@ -122,12 +169,22 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #52AC2A;
         z-index: 1;
+        transform: rotate(225deg) translate(0, -55px);
+        animation: 2s point2 0.74s ease;
+        animation-fill-mode: forwards;
     }
-    
-    &::before {
-        transform: rotate(114deg) translate(0, -55px);
+}
+
+@-webkit-keyframes point2 {
+    from {
+        -webkit-transform: rotate(135deg) translateX(55px);
+        background-color: #9DD581;
+    }
+
+    to {
+        -webkit-transform: rotate(386deg) translateX(55px);
+        background-color: #52AC2A;
     }
 }
 
@@ -137,15 +194,27 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: conic-gradient(#FFF 0, #FFF 25%, #9DD581 25%, #52AC2A 36.25%, $neutral-75 25%, $neutral-75);
+    background: conic-gradient(white 0 90deg,
+            #9DD581 90deg,
+            #52AC2A var(--angle2),
+            #ededed 90deg 360deg);
     mask: radial-gradient(transparent, transparent 50px, #000 50.5px, #000 0);
     transform: rotate(135deg);
+    animation: 2s animate3 0s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate3 {
+    to {
+        --angle2: 130.5deg;
+    }
 }
 
 .circle-point-3 {
     position: absolute;
     top: 0;
     left: 0;
+
     &::before {
         content: "";
         position: absolute;
@@ -154,11 +223,21 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #52AC2A;
         z-index: 1;
+        transform: rotate(225deg) translate(0, -55px);
+        animation: 2s point3 1.1s ease;
+        animation-fill-mode: forwards;
     }
-    
-    &::before {
-        transform: rotate(265deg) translate(0, -55px);
+}
+
+@-webkit-keyframes point3 {
+    from {
+        -webkit-transform: rotate(135deg) translateX(55px);
+        background-color: #9DD581;
+    }
+
+    to {
+        -webkit-transform: rotate(174deg) translateX(55px);
+        background-color: #52AC2A;
     }
 }
