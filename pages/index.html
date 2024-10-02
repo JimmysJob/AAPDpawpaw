@@ -90,8 +90,10 @@
                   <a href="#"><img src="/assets/images/img01-sm.png" alt="" class="rounded-2"></a>
                 </div>
               </div>
-              <div class="swiper-slide ms-img-setting">
-                <div><a href="#"><img src="/assets/images/img02-sm.png" alt="" class="rounded-2"></a></div>
+              <div class="swiper-slide ms-img-setting position-relative">
+                <div>
+                  <a href="#"><img src="/assets/images/img02-sm.png" alt="" class="rounded-2"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -120,6 +122,7 @@
       });
       var swiper = new Swiper(".myImgSwiper", {
         slidesPerView: 1,
+        spaceBetween: -60,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
