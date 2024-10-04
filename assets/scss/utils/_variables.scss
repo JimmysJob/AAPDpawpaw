@@ -674,10 +674,10 @@ $aspect-ratios: (
 //   'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
 //   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Bold', 'Regular' !default;
 
-$font-family-sans-serif: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+$font-family-sans-serif:'Regular', 'Bold', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
   'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
-  'Bold', 'Regular' !default;
+    !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   'Liberation Mono', 'Courier New', monospace !default;
 // stylelint-enable value-keyword-case
@@ -696,7 +696,7 @@ $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-semibold: 600 !default;
-$font-weight-bold: 700 !default;
+$font-weight-bold: 800 !default;
 // $font-weight-bolder: bolder !default;
 $font-weight-bolder: 900 !default;
 
